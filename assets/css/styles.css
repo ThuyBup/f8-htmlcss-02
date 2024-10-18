@@ -15,7 +15,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Common */
+/* ===== Common ===== */
 a {
   text-decoration: none;
 }
@@ -40,7 +40,7 @@ a {
   background: #171100;
 }
 
-/* Header */
+/* ===== Header ===== */
 .header {
   background: #fffcf4;
 }
@@ -99,7 +99,7 @@ a {
   margin-left: 49px;
 }
 
-/* Hero */
+/* ===== Hero =====  */
 .hero {
   padding: 56px 0 65px;
   background: #fffcf4;
@@ -123,13 +123,13 @@ a {
 
 .hero-summary {
   position: absolute;
-  left: 300px;
+  right: 0;
   bottom: 48px;
   width: 270px;
   padding: 24px;
   border-radius: 12px;
   background: #fff;
-  box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 16px 32px rgba(0, 0, 0, 0.05);
 }
 
 .hero-summary .item {
@@ -170,7 +170,7 @@ a {
 
 .hero .content-block {
   width: 52%;
-  margin-left: 230px;
+  padding-left: 130px;
 }
 
 .content-block .title {
@@ -207,7 +207,8 @@ a {
   align-items: center;
   margin-left: 28px;
   border: none;
-  background: #fffcf4;
+  background: transparent;
+  cursor: pointer;
 }
 
 .content-block .play-video {
@@ -218,6 +219,7 @@ a {
   height: 40px;
   border-radius: 50%;
   background: #fff;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
 }
 
 .content-block .watch-video span {
@@ -233,9 +235,130 @@ a {
 }
 
 .content-block .stats strong {
-  margin: 0 8px 0 28px;
+  margin: 0 14px 0 28px;
   color: #171100;
   font-family: Sen, sans-serif;
   font-size: 4.4rem;
   line-height: 1.22;
+}
+
+/* ===== Course ===== */
+.course {
+  padding: 200px 0 200px 0;
+}
+
+.course .heading {
+  display: flex;
+  align-items: center;
+}
+
+.course .sub-title {
+  color: #171100;
+  font-family: Sen, sans-serif;
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.76px;
+}
+
+.course .desc {
+  margin-top: 16px;
+  max-width: 458px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  line-height: 1.66;
+}
+
+.course .control {
+  display: flex;
+  margin-left: auto;
+}
+
+.course .heading .arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+  width: 40px;
+  height: 40px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.course .arrow:hover {
+  color: #fff;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+/* ===== Course-list ===== */
+.course .course-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 55px;
+}
+
+.course .course-item {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 36px rgba(0, 0, 0, 0.05);
+}
+
+.course .course-list .thumb {
+  width: 370px;
+  height: 278px;
+  border-radius: 12px 12px 0px 0px;
+}
+
+.course .course-item .info {
+  padding: 16px 22px 22px;
+}
+
+.course .course-item .head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.course .course-item .star {
+  display: flex;
+  align-items: center;
+}
+
+.course .course-item .star span {
+  margin-left: 6px;
+  color: #fea31b;
+  font-size: 1.6rem;
+}
+
+.course-item .head .title {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67;
+}
+
+.course-item .info .desc {
+  margin-top: 6px;
+  color: #5f5b53;
+  font-size: 1.4rem;
+  line-height: 1.85;
+}
+
+.course-item .foot {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.course-item .foot .value {
+  color: #171100;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.course-item a.btn-book:hover {
+  background: var(--primary-color);
 }
